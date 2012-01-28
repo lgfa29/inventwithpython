@@ -694,4 +694,211 @@ aumentando o valor armazenado em ``spam`` em ``5`` várias vezes:
 >>>
 ``
 
+% <h2 id="UsingMoreThanOneVariable">Using More Than One Variable</h2>
+
+== Usando Mais de Uma Variável ==
+
+% When we program we won't always want to be limited to only one
+% variable. Often we'll need to use multiple variables.
+
+Quando nós programamos, nós nem sempre iremos querer nos limitarmos à 
+apenas uma única variável. Frequentemente nós iremos precisar usar 
+diversas variáveis.
+
+% For example, let's assign different values to two variables named
+% <span class='m'>eggs</span> and <span class='m'>fizz</span>, like
+% so:</p>
+
+Por exemplo, vamos associar valores diferentes a duas variáveis 
+chamadas ``eggs`` e ``fizz``, assim:
+
+% <div class='sourceblurb'>
+% &gt;&gt;&gt; fizz = 10<br />
+% &gt;&gt;&gt; eggs = 15<br />
+% </div>
+
+``
+>>> fizz = 10
+>>> eggs = 15
+``
+
+% Now the <span class='m'>fizz</span> variable has <span class='m'>10
+% </span> inside it, and <span class='m'>eggs</span> has <span
+% class='m'>15</span> inside it.
+
+Agora a variável ``fizz`` tem ``10`` armazenado nela, e ``eggs`` tem 
+``15`` dentro dela.
+
+% <p class='centeredImageP'><img src='images/2-5.png' alt=''
+% class='centeredImage' /><br />
+% Figure 2-5: The "fizz" and "eggs" variables have values stored in
+% them.</p>
+
+Figura 2-5: As variáveis "fizz" e "eggs" possuem valores armazenados 
+dentro delas.
+
+% Without changing the value in our <span class='m'>spam</span>
+% variable, let's try assigning a new value to the <span class='m'>
+% spam</span> variable. Enter <span class='m'>spam = fizz + eggs</span>
+% into the shell then enter <span class='m'>spam</span> into the shell
+% to see the new value of <span class='m'>spam</span>. Can you guess
+% what it will be?</p>
+
+Sem mudar o calor em nossa variável ``spam``, vamos tentar armazenar 
+um novo valor para a variável ``spam``. Execute ``spam = fizz + eggs`` 
+no console e em seguida execute ``spam`` no console para ver o novo 
+valor de ``spam``. Você consegue imaginar qual será?
+
+% <div class='sourceblurb'>
+% &gt;&gt;&gt; fizz = 10<br />
+% &gt;&gt;&gt; eggs = 15<br />
+% &gt;&gt;&gt; spam = fizz + eggs<br />
+% &gt;&gt;&gt; spam<br />
+% 25<br />
+% &gt;&gt;&gt;<br />
+% </div>
+
+``
+>>> fizz = 10
+>>> eggs = 15
+>>> spam = fizz + eggs
+>>> spam
+25
+>>>
+``
+
+% The value in <span class='m'>spam</span> is now <span class='m'>25
+% </span> because when we add <span class='m'>fizz</span> and <span
+% class='m'>eggs</span> we are adding the values stored inside <span
+% class='m'>fizz</span> and <span class='m'>eggs</span>.
+
+O valor em ``spam`` é agora ``25`` pois quando nós somamos ``fizz`` 
+e ``eggs`` nós estamos somando os valores armazenados dentro de 
+``fizz`` e ``eggs``.
+
+% <h3>Overwriting Variables</h3>
+
+=== Sobrescrevendo Variáveis ===
+
+% Changing the value stored inside a variable is easy. Just perform
+% another assignment statement with the same variable. Look what
+% happens when you enter the following code into the interactive
+% shell:
+
+Mudar o valor armazenado dentro de uma variável é simples. Apenas 
+execute outra declaração de associação com a mesma variável. Veja o 
+que acontece quando você executa o seguinte comando no console 
+interativo:
+
+% <div class='sourceblurb'>
+% &gt;&gt;&gt; spam = 42<br />
+% &gt;&gt;&gt; print(spam)<br />
+% 42<br />
+% &gt;&gt;&gt; spam = 'Hello'<br />
+% &gt;&gt;&gt; print(spam)<br />
+% Hello<br />
+% </div>
+
+``
+>>> spam = 42
+>>> print(spam)
+42
+>>> spam = 'Hello'
+>>> print(spam)
+Hello
+``
+
+% Initially, the <span class='m'>spam</span> variable had the integer
+% <span class='m'>42</span> placed inside of it. This is why the first
+% <span class='m'>print(spam)</span> prints out <span class='m'>42
+% </span>. But when we execute <span class='m'>spam = 'Hello'</span>,
+% the <span class='m'>42</span> value is tossed out of the variable
+% and forgotten as the new <span class='m'>'Hello'</span> string value
+% is placed inside the <span class='m'>spam</span> variable.
+
+Inicialmente, a variável ``spam`` tinha um inteiro ``42`` guardado 
+dentro dela. Por isso que o primeiro ``print(spam)`` imprime ``42``. 
+Mas quando nós executamos ``spam = 'Hello'``, o valor ``42`` é jogado 
+fora da variável e esquecido pois o novo valor da string ``'Hello'`` 
+é armazenada dentro da variável ``spam``.
+
+% Replacing the value in a variable with a new value is called <span
+% class='term'>overwriting</span> the value. It is important to know
+% that the old value is permanently forgotten. If you want to remember
+% this value so you can use it later in your program, store it in a
+% different variable before overwriting the value:
+
+Substituindo o valor de uma variável com um novo calor é chamado 
+``sobrescrever`` o valor. É importante saber que o valor antigo é 
+permanentemente esquecido. Se você quiser lembrar esse valor para 
+poder usá-lo mais tarde no seu programa, guarde-o em uma variável 
+diferente antes de sobrescrever o valor:
+
+% <div class='sourceblurb'>
+% &gt;&gt;&gt; spam = 42<br />
+% &gt;&gt;&gt; print(spam)<br />
+% 42<br />
+% &gt;&gt;&gt; oldSpam = spam<br />
+% &gt;&gt;&gt; spam = 'Hello'<br />
+% &gt;&gt;&gt; print(spam)<br />
+% Hello<br />
+% &gt;&gt;&gt; print(oldSpam)<br />
+% 42<br />
+% </div>
+
+``
+>>> spam = 42
+>>> print(spam)
+42
+>>> oldSpam = spam
+>>> spam = 'Hello'
+>>> print(spam)
+Hello
+>>> print(oldSpam)
+42
+``
+
+% In the above example, before overwriting the value in <span
+% class='m'>spam</span>, we copy that value to a variable named <span
+% class='m'>oldSpam</span>. At that point, both <span class='m'>spam
+% </span> and <span class='m'>oldSpam</span> store the value <span
+% class='m'>42</span>. On the next line, the string <span class='m'>
+% 'Hello'</span> is stored in <span class='m'>spam</span> but <span
+% class='m'>oldSpam</span> is left untouched.
+
+No exemplo acima, antes de sobrescrever o valor em ``spam``, nós 
+copiamos esse valor em uma variável chamada ``oldSpam``. Nesse 
+momento, tanto ``spam`` quanto  ``oldSpam`` guardam o valor  ``42``. 
+Na linha seguinte, a string ``'Hello'`` é armazenada em ``spam`` mas 
+``oldSpam`` permanece igual.
+
+% <h2 id="Summary">Summary</h2>
+== Sumário ==
+
+% In this chapter you learned the basics about writing Python
+% instructions. Python needs you to tell it exactly what to do in a
+% strict way, because computers don't have common sense and only
+% understand very simple instructions. You have learned that Python
+% can evaluate expressions (that is, reduce the expression to a single
+% value), and that expressions are values (such as <span class='m'>2
+% </span> or <span class='m'>5</span>) combined with operators (such
+% as <span class='m'>+</span> or <span class='m'>-</span>). You have
+% also learned that you can store values inside of variables so that
+% your program can remember them in order to use them later on.
+
+Neste capítulo você aprendeu o básico sobre escrever instruções em 
+Python. Python precisa que você diga a ele exatamente o que fazer em 
+uma forma expecífica, pois computadores não tem bom senso e entende 
+apenas instruções muito simples. Você aprendeu que Python pode 
+avaliar expressões (ou seja, reduzir a expressão em um único valor), 
+e que expressões são valores (tais como ``2`` ou ``5``) combinados 
+com operadores (tais como ``+`` or ``-``). Você também aprendeu que 
+você pode armazenar valores dentro de variáveis para que o seu 
+programa possa se lembrar delas e possa utilizá-las mais tarde.
+
+% In the next chapter, we will go over some more basic concepts, and
+% you will write your first program!
+
+No próximo capítulo, nós iremos cobrir mais alguns conceitos básicos, 
+e você irá escrever o seu primeiro programa!
 
