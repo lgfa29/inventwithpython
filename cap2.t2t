@@ -23,11 +23,11 @@ Capítulo 2
 
 Antes de começarmos a escrever jogos de computador, nós devemos, primeiro,
 aprender alguns conceitos básicos de programação. Estes conceitos são: 
-valores, operadores, expressões e variáveis. Nós não vamos começar a programar 
-nesse capítulo, mas conhecer estes conceitos e nome das coisas fará com que 
-aprender a programar seja muito mais fácil. Isso porque a maior parte da 
-programação se resume a combinar alguns poucos conceitos simples para formar 
-programas mais avançados.
+valores, operadores, expressões e variáveis. Nós não vamos começar a 
+programar nesse capítulo, mas conhecer estes conceitos e nome das coisas 
+fará com que aprender a programar seja muito mais fácil. Isso porque a maior 
+parte da programação se resume a combinar alguns poucos conceitos simples 
+para formar programas mais avançados.
 
 % Let's start by learning how to use Python's interactive shell.
 
@@ -40,19 +40,19 @@ Vamos começar aprendendo como usar o console interativo do Python.
 % To open IDLE on Windows, click on <span class='menuname'>Start</span>,
 % then <span class='menuname'>Programs</span>, then <span class='menuname'>
 % Python 3.1</span>, then <span class='menuname'>IDLE (Python GUI)</span>.
-% With IDLE open, let's do some simple math with Python. The interactive shell
-% can work just like a calculator. Type <span class='m'>2+2</span> into the
-% shell and press the Enter key on your keyboard. (On some keyboards, this is
-% the Return key.) As you can see in Figure 2-1, the computer should respond
-% with the number 4; the sum of 2+2.
+% With IDLE open, let's do some simple math with Python. The interactive
+% shell can work just like a calculator. Type <span class='m'>2+2</span>
+% into the shell and press the Enter key on your keyboard. (On some
+% keyboards, this is the Return key.) As you can see in Figure 2-1, the
+% computer should respond with the number 4; the sum of 2+2.
 
-Para abrir o IDLE no Windows, clique em ``Iniciar``, depois em ``Programas``, 
-``Python 3.1`` e, finalmente, em ``IDLE (Python GUI)``. Com o IDLE aberto, 
-vamos fazer um pouco de matemática básica com Python. O console interativo 
-pode funcionar como se fosse uma calculadora. Digite ``2+2`` no console e 
-aperte a tecla Enter do seu teclado (em alguns teclados, ela pode se chamar 
-Return ou Retorno). Como você pode ver na figura 2-1, o computador deve 
-respoder com o número 4; a soma de 2+2.
+Para abrir o IDLE no Windows, clique em ``Iniciar``, depois em 
+``Programas``, ``Python 3.1`` e, finalmente, em ``IDLE (Python GUI)``. Com o 
+IDLE aberto, vamos fazer um pouco de matemática básica com Python. O console 
+interativo pode funcionar como se fosse uma calculadora. Digite ``2+2`` no 
+console e aperte a tecla Enter do seu teclado (em alguns teclados, ela pode 
+se chamar Return ou Retorno). Como você pode ver na figura 2-1, o computador 
+deve respoder com o número 4; a soma de 2+2.
 
 % <p class='centeredImageP'><img src='images/2-1.png' alt=''
 % class='centeredImage' /><br />
@@ -61,28 +61,29 @@ respoder com o número 4; a soma de 2+2.
 Figura 2-1: Digite ``2+2`` no console.
 
 % As you can see, we can use the Python shell just like a calculator. This
-% isn't a program by itself because we are just learning the basics right now.
-% The <span class='m'>+</span> sign tells the computer to add the numbers 2
-% and 2. To subtract numbers use the <span class='m'>-</span> sign, and to
-% multiply numbers use an asterisk (<span class='m'>*</span>), like so:</p>
+% isn't a program by itself because we are just learning the basics right 
+% now. The <span class='m'>+</span> sign tells the computer to add the 
+% numbers 2 and 2. To subtract numbers use the <span class='m'>-</span> 
+% sign, and to multiply numbers use an asterisk (<span class='m'>*</span>), 
+% like so:</p>
 
-Como você pode ver, nós podemos usar o console interativo do Python exatamente 
-como se fosse uma calculadora. Isso ainda não é um programa porque nós ainda 
-estamos aprendendo o básico nesse momento. O sinal de ``+`` diz ao computador 
-para somar os números 2 e 2. Para subtrair números use o sinal de ``-``, e 
-para multiplicar use um asterisco (``*``), assim:
+Como você pode ver, nós podemos usar o console interativo do Python 
+exatamente como se fosse uma calculadora. Isso ainda não é um programa 
+porque nós ainda estamos aprendendo o básico nesse momento. O sinal de ``+`` 
+diz ao computador para somar os números 2 e 2. Para subtrair números use o 
+sinal de ``-``, e para multiplicar use um asterisco (``*``), assim:
 
 % <table class='centertable simpletable'
 % style='width: 200px; text-align: center;'>
 % <caption>Table 2-1: The various math operators in Python.</caption>
-% <tr><td class='simpletd'><span class='m'>2+2</span></td><td class='simpletd'>
-% addition</td></tr>
-% <tr><td class='simpletd'><span class='m'>2-2</span></td><td class='simpletd'>
-% subtraction</td></tr>
-% <tr><td class='simpletd'><span class='m'>2*2</span></td><td class='simpletd'>
-% multiplication</td></tr>
-% <tr><td class='simpletd'><span class='m'>2/2</span></td><td class='simpletd'>
-% division</td></tr>
+% <tr><td class='simpletd'><span class='m'>2+2</span></td><td
+% class='simpletd'>addition</td></tr>
+% <tr><td class='simpletd'><span class='m'>2-2</span></td><td
+% class='simpletd'>subtraction</td></tr>
+% <tr><td class='simpletd'><span class='m'>2*2</span></td><td
+% class='simpletd'>multiplication</td></tr>
+% <tr><td class='simpletd'><span class='m'>2/2</span></td><td
+% class='simpletd'>division</td></tr>
 % </table>
 
 Tabela 2-1: Os vários operadores matemáticos do Python.
@@ -92,16 +93,16 @@ Tabela 2-1: Os vários operadores matemáticos do Python.
 | ``2/2`` | divisão       |
 
 
-% When used in this way, +, -, *, and / are called <span class='term'>operators
-% </span> because they tell the computer to perform the specified operation on
-% the numbers surrounding them.
+% When used in this way, +, -, *, and / are called <span class='term'>
+% operators</span> because they tell the computer to perform the specified 
+% operation on the numbers surrounding them.
 
-Quando usados dessa forma, +, -, *, e / são chamados de ``operadores`` porque 
-eles dizem ao computador realizar a operação escolhida nos números quem estão 
-em volta dele.
+Quando usados dessa forma, +, -, *, e / são chamados de ``operadores`` 
+porque eles dizem ao computador realizar a operação escolhida nos números 
+quem estão em volta dele.
 
-% <h3 id="IntegersandFloatingPointNumbers">Integers and Floating Point Numbers
-% </h3>
+% <h3 id="IntegersandFloatingPointNumbers">Integers and Floating Point
+% Numbers</h3>
 
 == Números Inteiros e de Ponto Flutuante ==
 
@@ -109,18 +110,20 @@ em volta dele.
 % are called <span class='term'>integers</span>. Numbers with fractions or
 % decimal points (like 3.5 and 42.1 and 5.0) are not integers. In Python, the
 % number 5 is an integer, but if we wrote it as 5.0 it would not be an
-% integer. Numbers with a decimal point are called <span class='term'>floating
-% point numbers</span>. In mathematics, 5.0 is still considered an integer and
-% the same as the number 5, but in computer programming the computer considers
-% any number with a decimal point as not an integer.
+% integer. Numbers with a decimal point are called <span class='term'>
+% floating point numbers</span>. In mathematics, 5.0 is still considered an
+% integer and the same as the number 5, but in computer programming the
+% computer considers any number with a decimal point as not an integer.
 
-Em programação (e também na matemática), números como 4, 0 e 99 são chamados 
-de ``inteiros``. Números com fração ou casas decimais (como 3,5 e 42,1 e 5,0) 
-não são inteiros. Em Python, o número 5 é um inteiro, mas se nós escrevermos 
-ele como 5.0 ele não será mais um inteiro. Números com casas decimais são 
-chamados ``números de ponto flutuante``. Na matemática, 5,0 ainda é 
-considerado um inteiro e é igual ao número 5, mas em programação o computador 
-considera qualquer número com casa decimal como um número não inteiro.
+Em programação (e também na matemática), números como 4, 0 e 99 
+são chamados de ``inteiros``. Números com fração ou casas decimais 
+(como 3,5 e 42,1 e 5,0) não são inteiros. Em Python, o número 5 é 
+um inteiro, mas se nós escrevermos ele como 5.0 ele não será mais 
+um inteiro. Números com casas decimais são chamados ``números de 
+ponto flutuante``. Na matemática, 5,0 ainda é considerado um 
+inteiro e é igual ao número 5, mas em programação o computador 
+considera qualquer número com casa decimal como um número não 
+inteiro.
 
 % No arquivo original tem uma seção comentada sobre o uso da vírgula para 
 % separar a casa de milhar. Não faze sentido no Brasil, mas eu adaptei para a
@@ -158,9 +161,9 @@ do tipo:
 % calculations we want it to do, we must enter them in a particular way.
 
 Isso foi muito mais rápido do que resolvar não mão! Resolver contas 
-rapidamente foi o motivo pelo qual os computadores foram criados. Mas para que 
-o Python entendo que conta nós queremos fazer, nós devemos escreve-lás em um 
-formato específico.
+rapidamente foi o motivo pelo qual os computadores foram criados. Mas para 
+que o Python entenda que conta nós queremos fazer, nós devemos escreve-lás 
+em um formato específico.
 
 % In Python, we don't put commas inside numbers. We type <span class='m'>2063
 % </span> instead of <span class='m'>2,063</span>. The computer can do what
@@ -203,25 +206,26 @@ tecla Enter depois de cada um deles.
 % Figure 2-2 is what the interactive shell in IDLE will look like after you
 % type in the instructions above.
 
-Figura 2-2 mostra como o console interativo no IDLE irá ficar depois que você 
-digitar as instruções acima.
+Figura 2-2 mostra como o console interativo no IDLE irá ficar depois que 
+você digitar as instruções acima.
 
 % <p class='centeredImageP'><img src='images/2-2.png' alt=''
 % class='centeredImage' /><br />
-% Figure 2-2: What the IDLE window looks like after entering instructions.</p>
+% Figure 2-2: What the IDLE window looks like after entering instructions.
 
 Figura 2-2: Como a janela do IDLE ficará depois de executar as instruções.
 
 % <p style='float: right;' class='centeredImageP'><img src='images/2-3.png'
 % alt='' class='centeredImage' /><br />
-% Figure 2-3: An expression is a made up of values and operators.</p>
+% Figure 2-3: An expression is a made up of values and operators.
 
 Figura 2-3: Uma expressão é formada por valores e operadores.
 
 % These math problems are called expressions. Computers can solve millions of
 % these problems in seconds. Expressions are made up of <span class='term'>
-% values</span> (the numbers) connected by <span class='term'>operators</span>
-% (the math signs). Let's learn exactly what values and operators are.
+% values</span> (the numbers) connected by <span class='term'>operators
+% </span> (the math signs). Let's learn exactly what values and operators
+% are.
 
 Estes problemas matemáticos são chamados expressões. Computadores podem 
 resolver milhões destes problemas em segundos. Expressões são formadas por 
@@ -233,43 +237,461 @@ matemáticos). Vamos aprender exatamente o que valores e operadores são.
 % sure to always start at the very beginning of the line, with no spaces in
 % front.)
 
-Como você pode ver nas últimas expressões do exemplo acima, você pode colocar 
-quantos espaços você quiser entre os inteiros e estes operadores (mas tenha 
-certeza de sempre começar no início da linha, sem espaços em branco na frente).
+Como você pode ver nas últimas expressões do exemplo acima, você pode 
+colocar quantos espaços você quiser entre os inteiros e estes operadores 
+(mas tenha certeza de sempre começar no início da linha, sem 
+espaços em branco na frente).
 
-% Numbers are a type of value. Integers are a type of number. But, even though
-% integers are numbers, not all numbers are integers. (For example, fractions
-% and numbers with decimal points like <span class='m'>2.5</span> are numbers
-% that are not integers.
+% Numbers are a type of value. Integers are a type of number. But, even
+% though integers are numbers, not all numbers are integers. (For example,
+% fractions and numbers with decimal points like <span class='m'>2.5</span>
+% are numbers that are not integers.
 
 Números são um tipo de valor. Inteiros são um tipo de número. Mas, embora 
 inteiros sejam números, nem todos os números são inteiros (por exemplo, 
-frações e números com casas decimais como ``2.5`` são números que não são 
-inteiros).
+frações e números com casas decimais como ``2.5`` são números que não 
+são inteiros).
 
 % This is like how a cat is a type of pet, but not all pets are cats. Someone
 % could have a pet dog or a pet hermit crab. An <span class='term'>expression
-% </span> is made up of values (such as integers like 8 and 6) connected by an
-% operator (such as the * multiplication sign). A single value by itself is
-% also considered an expression.
+% </span> is made up of values (such as integers like 8 and 6) connected by
+% an operator (such as the * multiplication sign). A single value by itself
+% is also considered an expression.
 
-Isso é como um gato é um tipo de animal de estimação, mas nem todos os animais 
-de estimação são gatos. Alguém poderia ter como animal de estimação um 
-cachorro ou um carangueijo ermitão. Uma ``expressão`` é formada por valores 
-(como os inteiros 8 e 6) conectados por um operador (como o símbolo de 
-multiplicação *). Um único valor sozinho também é considerado uma expressão.
+Isso é como um gato é um tipo de animal de estimação, mas nem todos 
+os animais de estimação são gatos. Alguém poderia ter como animal de 
+estimação um cachorro ou um carangueijo ermitão. Uma ``expressão`` é 
+formada por valores (como os inteiros 8 e 6) conectados por um operador 
+(como o símbolo de multiplicação *). Um único valor sozinho também é 
+considerado uma expressão.
 
 % In the next chapter, we will learn about working with text in expressions.
-% Python isn't limited to just numbers. It's more than just a fancy calculator!
+% Python isn't limited to just numbers. It's more than just a fancy
+% calculator!
 
 No próximo capítulo, nós vamos aprender como trabahar com texto nas 
-expressões. Python não é limitado apenas à números. É muito mais do que uma 
-calculadora rebuscada!
+expressões. Python não é limitado apenas à números. É muito mais do que 
+uma calculadora rebuscada!
 
+% <h2 id="EvaluatingExpressions">Evaluating Expressions</h2>
+== Avaliando Expressões ==
 
+% When a computer solves the expression <span class='m'>10 + 5</span> and
+% gets the value <span class='m'>15</span>, we say it has <span class='term'>
+% evaluated</span> the expression. Evaluating an expression reduces the
+% expression to a single value, just like solving a math problem reduces the
+% problem to a single number: the answer.
 
+Quando um computador resolve a expressão ``10 + 5`` e encontra o valor 
+``15``, nós dizemos que ele ``avaliou`` a expressão. Avaliar uma expressão 
+reduz a expressão a um único valor, da mesma forma que resolver um problema 
+matemático reduz o problema a um único número: a resposta.
 
+% The expressions <span class='m'>10 + 5</span> and <span class='m'>10 + 3 +
+% 2</span> have the same value, because they both evaluate to <span
+% class='m'>15</span>. Even single values are considered expressions: The
+% expression <span class='m'>15</span> evaluates to the value <span
+% class='m'>15</span>.
 
+As expressões ``10 + 5`` e  ``10 + 3 + 2`` possuem o mesmo valor, pois as 
+duas são avaliadas em ``15``. Até mesmo valores únicos são considerados 
+expressões: a expressão ``15`` é avaliada para o valor ``15``.
 
+% However, if you just type <span class='m'>5 +</span> into the interactive
+% shell, you will get an error message.
+
+Entretanto, se nós apenas digitarmos ``5 +`` no console interativo, você 
+receberá uma mensagem de erro.
+
+% <div class='sourceblurb'>
+% &gt;&gt;&gt; 5 +<br />
+% SyntaxError: invalid syntax<br />
+% </div>
+
+``
+>>> 5 +
+SyntaxError: invalid syntax
+``
+% This error happened because <span class='m'>5 +</span> is not an
+% expression. Expressions have values connected by operators, but the +
+% operator always expects to connect two things in Python. We have only
+% given it one. This is why the error message appeared. A syntax error means
+% that the computer does not understand the instruction you gave it because
+% you typed it incorrectly. Python will always display an error message if
+% you enter an instruction that it cannot understand.
+
+Esse erro ocorreu pois ``5 +`` não é uma expressão. Expressões possum 
+valores conectados por operadores, mas o operador + sempre espera conectar 
+duas coisas em Python. Nós demos a ele apenas um. Por isso a mensagem de 
+erro apareceu. Um erro de sintaxe significa que o computador não entende a 
+instrução que você deu a ele porque você a digitou incorretamente. Python 
+sempre irá mostrar uma mensagem de erro se você enviar uma instrução 
+que ele não consegue entender.
+
+% This may not seem important, but a lot of computer programming is not just
+% telling the computer what to do, but also knowing exactly how to tell the
+% computer to do it.
+
+Isso pode não parecer importante, mas grande parte da programação de 
+computadores não é apenas dizer ao computador o que ele deve fazer, mas 
+também saber exatamente como dizer isso ao computador.
+
+% <h3 id="ExpressionsInsideOtherExpressions">Expressions Inside Other
+% Expressions</h3>
+
+=== Expressões Dentro de Outras Expressões ===
+
+% Expressions can also contain other expressions. For example, in the
+% expression <span class='m'>2 + 5 + 8</span>, the <span class='m'>2 + 5
+% </span> part is its own expression. Python evaluates <span class='m'>2 + 5
+% </span> to <span class='m'>7</span>, so the original expression becomes
+% <span class='m'>7 + 8</span>. Python then evaluates this expression to
+% <span class='m'>15</span>.
+
+Expressões também podem conter outras expressões. Por exemplo, nas 
+expressões ``2 + 5 + 8``, a parte ``2 + 5`` é uma expressão. Python avalia 
+``2 + 5`` em ``7``, então a expressão original se transforma em ``7 + 8``. 
+Python então avalia essa expressão em ``15``.
+
+% Think of an expression as being a stack of pancakes. If you put two stacks
+% of pancakes together, you still have a stack of pancakes. And a large
+% stack of pancakes can be made up of smaller stacks of pancakes that were
+% put together. Expressions can be combined together to form larger
+% expressions in the same way. But no matter how big an expression is it
+% also evaluates to a single answer, just like <span class='m'>2 + 5 + 8
+% </span> evaluates to <span class='m'>15</span>.
+
+Pense em uma expressão como se fosse uma pilha de panquecas. Se você colocar 
+duas pilhas de panquecas juntas, você ainda terá uma pilha de panquecas. E 
+uma grande pilha de panquecas pode ser formada de pilhas menores de 
+panquecas que foram colocadas juntas. Da mesma forma, expressões podem ser 
+combinadas para formar expressões maiores. Mas não importa o quão grande uma 
+expressão é, ela também será avaliada em uma única resposta, 
+exatamente como ``2 + 5 + 8`` é avaliada em ``15``.
+
+% <h2 id="StoringValuesinVariables">Storing Values in Variables</h2>
+
+== Guardando Valores em Variáveis ==
+
+% When we program, we will often want to save the values that our expressions
+% evaluate to so we can use them later in the program. We can store values in
+% <span class='term'>variables</span>.
+
+Quando nós programamos, frequentemente nós vamos querer salvar os valores em 
+que as nossas expressões são avaliadas para que a gente possa usá-los mais 
+tarde em nosso programa. Nós podemos guardar valores em ``variáveis``.
+
+% Think of variables like a box that can hold values. You can store values
+% inside variables with the = sign (called the <span class='term'>assignment
+% operator</span>). For example, to store the value 15 in a variable named
+% "spam", enter <span class='m'>spam = 15</span> into the shell:
+
+Pense nas variáveis como uma caixa que pode guardar valores. Você pode 
+guardar valores dentro de variáveis com o símbolo = (chamado de ``operador 
+de atribuição``). Por exemplo, para guardar o valor 15 em uma variável 
+chamada "spam", digite ``spam = 15`` no console:
+
+% <div class='sourceblurb'>
+% &gt;&gt;&gt; spam = 15<br />
+% &gt;&gt;&gt;<br />
+% </div>
+
+``
+>>> spam = 15
+>>>
+``
+
+% <p style='float: right;' class='centeredImageP'><img src='images/2-4.png'
+% alt='' class='centeredImage' /><br />
+% Figure 2-4: Variables are like boxes that can hold values in them.</p>
+
+Figura 2-4: Variáveis são como caixas que podem guardar valores dentro delas.
+
+% You can think of the variable like a box with the value 15 inside of it (as
+% shown in Figure 2-4). The variable name "spam" is the label on the box (so
+% we can tell one variable from another) and the value stored in it is like a
+% small note inside the box.
+
+Você pode pensar em uma variável como uma caixa com o valor 15 dentro dela 
+(como mostrada na Figura 2-4). O nome da variável "spam" é a etiqueta na 
+caixa (para que nós possamos diferenciar uma variável da outra) e o valor 
+armazenado dentro dela é como se fosse um bilhete dentro da caixa.
+
+% When you press Enter you won't see anything in response, other than a blank
+% line. Unless you see an error message, you can assume that the instruction
+% has been executed successfully. The next &gt;&gt;&gt; prompt will appear so
+% that you can type in the next instruction.
+
+Quando você apertar Enter, você não verá nada como resposta, exceto uma 
+linha em branco. A menos que você veja uma mensagem de erro, você pode 
+assumir que a execução da instrução foi bem sucedida. O próximo >>> irá 
+aparecer para que você possa digitar a próxima instrução.
+
+% This instruction (called an <span class='term'>assignment statement</span>)
+% creates the variable <span class='m'>spam</span> and stores the value <span
+% class='m'>15</span> in it. Unlike expressions, <span class='term'>
+% statements</span> are instructions that do not evaluate to any value,
+% which is why there is no value displayed on the next line in the shell.
+
+Essa instrução (chamada de ``declaração de atribuição``) cria uma 
+variável ``spam`` e guarda o valor ``15`` nela. Diferentemente das 
+expressões, ``declarações`` são instruções que não são avaliadas a 
+nenhum valor, por isso que nenhum valor é exibido na próxima linha 
+do console.
+
+% It might be confusing to know which instructions are expressions and which
+% are statements. Just remember that if the instruction evaluates to a single
+% value, it's an expression. If the instruction does not, then it's a 
+% statement.
+
+Pode ser confuso saber quais instruções são expressões e quais são 
+declarações. Apenas lembre-se que se uma instrução for avaliada em único 
+valor, é uma expressão. Caso contrário, é uma declaração.
+
+% An assignment statement is written as a variable, followed by the = equal
+% sign, followed by an expression. The value that the expression evaluates to
+% is stored inside the variable. The value <span class='m'>15</span> by
+% itself is an expression. Expressions made up of a single value by itself
+% are easy to evaluate. These expressions just evaluate to the value itself.
+% For example, the expression <span class='m'>15</span> evaluates to <span
+% class='m'>15!</span></p>
+
+Uma declaração de atribuição é escrito como uma variável, seguida de um 
+símbolo de igual =, seguida de uma expressão. O valor em que a expressão é 
+avaliada é aramzenada dentro da variável. O valor ``15`` por si só é uma 
+expressão. Expressões formadas por um único valor são fáceis de 
+se avaliar. Estar expressões são avaliadas apenas em seu próprio 
+valor. Por exemplo, a expressão ``15`` é avaliada em ``15``!
+
+% Remember, variables store values, not expressions. For example, if we had
+% the statement, <span class='m'>spam = 10 + 5</span>, then the expression 
+% <span class='m'>10 + 5</span> would first be evaluated to <span class='m'>
+% 15</span> and then the value <span class='m'>15</span> would be stored in
+% the variable, <span class='m'>spam</span>.
+
+Lembre-se, variáveis guardam valores, não expressões. Por exemplo, se nós 
+tivéssemos a declaração, ``spam = 10 + 5``, então a expressão ``10 + 5`` 
+seria primeiro avaliada em ``15`` e então o valor ``15`` seria armazenado na 
+variável ``spam``.
+
+% The first time you store a value inside a variable by using an assignment
+% statement, Python will create that variable. Each time after that, an
+% assignment statement will only replace the value stored in the variable.
+
+A primeira vez que você armazenar um valor em uma variável usando uma 
+declaração de atribuição, Python irá criar essa variável. Todas as vezes 
+depois disso, uma declaração de atribuição irá apenas substituir o valor 
+aramzenado naquela variável.
+
+% Now let's see if we've created our variable properly. If we type <span
+% class='m'>spam</span> into the shell by itself, we should see what value is
+% stored inside the variable <span class='m'>spam</span>.
+
+Agora vamos ver se nós criamos a nossa variável corretamente. Se nós 
+digitarmos apenas ``spam`` no console, deveremos ver que valor está 
+armezenado dentro desta variável ``spam``.
+
+% <div class='sourceblurb'>
+% &gt;&gt;&gt; spam = 15<br />
+% &gt;&gt;&gt; spam<br />
+% 15<br />
+% &gt;&gt;&gt;<br />
+% </div>
+
+``
+>>> spam = 15
+>>> spam
+15
+>>>
+``
+
+% Now, <span class='m'>spam</span> evaluates to the value inside the
+% variable, 15.
+
+Agora, ``spam`` é avaliado para o valor armazenado dentro da variável, 15.
+
+% And here's an interesting twist. If we now enter <span class='m'>spam + 5
+% </span> into the shell, we get the integer <span class='m'>20</span>, like
+% so.
+
+E aqui está uma mudança interessante. Se nós agora digitarmos ``spam + 5`` 
+no console, nós recebemos o inteiro ``20``, assim.
+
+% <div class='sourceblurb'>
+% &gt;&gt;&gt; spam = 15<br />
+% &gt;&gt;&gt; spam + 5<br />
+% 20<br />
+% &gt;&gt;&gt;<br />
+% </div>
+
+``
+>>> spam = 15
+>>> spam + 5
+20
+>>>
+``
+
+% That may seem odd but it makes sense when we remember that we set the value
+% of spam to <span class='m'>15</span>. Because we've set the value of the
+% variable <span class='m'>spam</span> to <span class='m'>15</span>, writing
+% <span class='m'>spam + 5</span> is like writing the expression <span
+% class='m'>15 + 5</span>.
+
+Isso pode parecer estranho mas faz todo o sentido quando nós lembramos que 
+nós associamos o valor de spam para ``15``. Como nós associamos o valor da 
+variável ``spam`` para ``15``, escrevendo ``spam + 5`` é como escrever a 
+expressão ``15 + 5``.
+
+% If you try to use a variable before it has been created, Python will give
+% you an error because no such variable would exist yet. This also happens
+% if you mistype the name of the variable.
+
+Se você tentar usar uma variável antes de criá-la, Python lhe dará um erro 
+porque nenhuma variável com aquele nome foi criada ainda. Isso também 
+acontece se você digitar o nome errado de uma variável.
+
+% We can change the value stored in a variable by entering another assignment
+% statement. For example, try the following:
+
+Nós podemos mudar o valor armazenado em uma variável executando uma outra 
+declaração de associação. Por exemplo, tente o seguinte:
+
+% <div class='sourceblurb'>
+% &gt;&gt;&gt; spam = 15<br />
+% &gt;&gt;&gt; spam + 5<br />
+% 20<br />
+% &gt;&gt;&gt; spam = 3<br />
+% &gt;&gt;&gt; spam + 5<br />
+% 8<br />
+% &gt;&gt;&gt;<br />
+% </div>
+
+``
+>>> spam = 15
+>>> spam + 5
+20
+>>> spam = 3
+>>> spam + 5
+8
+>>>
+``
+
+% The first time we enter <span class='m'>spam + 5</span>, the expression
+% evaluates to <span class='m'>20</span>, because we stored the value <span
+% class='m'>15</span> inside the variable <span class='m'>spam</span>. But
+% when we enter <span class='m'>spam = 3</span>, the value <span class='m'>15
+% </span> is replaced, or overwritten, with the value <span class='m'>3
+% </span>. Now, when we enter <span class='m'>spam + 5</span>, the
+% expression evaluates to <span class='m'>8</span> because the value of
+% <span class='m'>spam</span> is now 3.
+
+Na primeira vez em que executamos ``spam + 5``, a expressão é avaliada em 
+``20``, pois nós armazenamos o valor ``15`` dentro da variável ``spam``. Mas 
+quando nós executamos ``spam = 3``, o valor ``15`` é substituído, ou 
+sobrescrito, com o valor ``3``. Agora, quando nós executamos ``spam + 5``, a 
+expressão é avaliada em ``8`` porque o valor de ``spam`` agora é 3.
+
+% To find out what the current value is inside a variable, just enter the
+% variable name into the shell.
+
+Para descobrir qual o valor atual armazenado em uma variável, apenas digite 
+o nome da variável no console e aperte Enter.
+
+% Now here's something interesting. Because a variable is only a name for a
+% value, we can write expressions with variables like this:
+
+Agora aqui está algo interessanto. Como uma variável é apenas um nome para 
+um valor, nós podemos escrever expressões com variáveis dessa forma:
+
+% <div class='sourceblurb'>
+% &gt;&gt;&gt; spam = 15<br />
+% &gt;&gt;&gt; spam + spam<br />
+% 30<br />
+% &gt;&gt;&gt; spam - spam<br />
+% 0<br />
+% &gt;&gt;&gt;<br />
+% </div>
+
+``
+>>> spam = 15
+>>> spam + spam
+30
+>>> spam - spam
+0
+>>> >>>
+``
+
+% When the variable <span class='m'>spam</span> has the integer value <span
+% class='m'>15</span> stored in it, entering <span class='m'>spam + spam
+% </span> is the same as entering <span class='m'>15 + 15</span>, which
+% evaluates to <span class='m'>30</span>. And <span class='m'>spam - spam
+% </span> is the same as <span class='m'>15 - 15</span>, which evaluates to
+% <span class='m'>0 </span>. The expressions above use the variable
+% <span class='m'>spam</span> twice. You can use variables as many times as
+% you want in expressions. Remember that Python will evaluate a variable
+% name to the value that is stored inside that variable, each time the
+% variable is used.
+
+Quando a variável ``spam`` tem o valor inteiro ``15`` armezenado nela, 
+executando ``spam + spam`` é o mesmo que executar ``15 + 15``, que é 
+avaliado em ``30``. E ``spam - spam`` é o mesmo que ``15 - 15``, que é 
+avaliado em ``0``. As expressões acima usam a variável ``spam`` duas vezes. 
+Você pode usar variáveis quantas vezes você quiser em expressões. Lembre-se 
+que o Python irá avaliar o nome da variável ao valor que está armazenado 
+dentro da variável, todas as vezes que a variável é utilizada.
+
+% We can even use the value in the <span class='m'>spam</span> variable to
+% assign <span class='m'>spam</span> a new value:
+
+Nós podemos até usar o valor amrmazenado na variável ``spam`` para associar 
+à ``spam`` um novo valor:
+
+% <div class='sourceblurb'>
+% &gt;&gt;&gt; spam = 15<br />
+% &gt;&gt;&gt; spam = spam + 5<br />
+% 20<br />
+% &gt;&gt;&gt;<br />
+% </div>
+
+``
+>>> spam = 15
+>>> spam = spam + 5
+20
+>>>
+``
+
+% The assignment statement <span class='m'>spam = spam + 5</span> is like
+% saying, "the new value of the <span class='m'>spam</span> variable will be
+% the current value of <span class='m'>spam</span> plus five." Remember that
+% the variable on the left side of the <span class='m'>=</span> sign will be
+% assigned the value that the expression on the right side evaluates to. We
+% can also keep increasing the value in <span class='m'>spam</span> by <span
+% class='m'>5</span> several times:
+
+A declaração de associação ``spam = spam + 5`` é como dizer, "o novo valor 
+da variável ``spam`` será o valor atual de ``spam`` mais cinco." Lembre-se 
+que a variável do lado esquerdo do símbolo ``=`` será associado ao valor que 
+a expressão do lado direito é avaliada. Nós podemos inclusive continuar 
+aumentando o valor armazenado em ``spam`` em ``5`` várias vezes:
+
+# <div class='sourceblurb'>
+# &gt;&gt;&gt; spam = 15<br />
+# &gt;&gt;&gt; spam = spam + 5<br />
+# &gt;&gt;&gt; spam = spam + 5<br />
+# &gt;&gt;&gt; spam = spam + 5<br />
+# &gt;&gt;&gt; spam<br />
+# 30<br />
+# &gt;&gt;&gt;<br />
+# </div>
+
+``
+>>> spam = 15
+>>> spam + 5
+>>> spam + 5
+>>> spam + 5
+>>> spam
+30
+>>>
+``
 
 
